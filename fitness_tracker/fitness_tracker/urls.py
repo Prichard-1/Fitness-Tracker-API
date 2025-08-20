@@ -26,8 +26,7 @@ urlpatterns = [
     # JWT authentication
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/', include('activities.urls')),
 
-    # App routes
-    path('api/users/', include('users.urls')),        # for registration/login
-    path('api/activities/', include('activities.urls')),  # for fitness tracking
+    
 ]

@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
 
     # Local apps
-    'users',        # your custom users app
     'activities',   # your activities app
 ]
 
